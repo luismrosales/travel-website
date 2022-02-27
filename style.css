@@ -220,7 +220,6 @@ p {
 
 .form-head {
   text-align: center;
-  padding: 4rem;
 }
 .name-form,
 .email-form {
@@ -236,6 +235,8 @@ p {
   width: 100%;
   padding: 2rem;
   margin-top: 8rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .form-wrapper input {
@@ -253,6 +254,34 @@ p {
   }
 }
 
+/* footer */
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* media query */
 @media screen and (max-width: 933px) {
   html {
@@ -263,6 +292,7 @@ p {
   }
   #logo {
     padding: 2rem;
+    font-size: 5rem;
   }
   .cloud {
     height: 40rem;
@@ -280,5 +310,12 @@ p {
   }
   .moving-cloud-2 {
     display: none;
+  }
+  footer h5 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .form-wrapper {
+    width: 70%;
   }
 }
