@@ -63,6 +63,9 @@ button:hover {
 .main-head {
   background: #131c27;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 nav {
@@ -317,5 +320,8 @@ footer ul {
   }
   .form-wrapper {
     width: 70%;
+  }
+  br {
+    display: none;
   }
 }
